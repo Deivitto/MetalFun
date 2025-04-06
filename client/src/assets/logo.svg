@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="metal-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#333333" />
+      <stop offset="25%" stop-color="#555555" />
+      <stop offset="50%" stop-color="#888888" />
+      <stop offset="75%" stop-color="#555555" />
+      <stop offset="100%" stop-color="#333333" />
+    </linearGradient>
+    <linearGradient id="silver-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0c0c0" />
+      <stop offset="100%" stop-color="#a9a9a9" />
+    </linearGradient>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#ffcc00" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main cube shape filled with metal gradient -->
+  <polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="url(#metal-gradient)" stroke="#111" stroke-width="2" />
+  
+  <!-- Inner facets to show depth -->
+  <polygon points="50,10 90,30 50,50 10,30" fill="#555" stroke="#111" stroke-width="1" />
+  <polygon points="50,50 90,30 90,70 50,90" fill="#444" stroke="#111" stroke-width="1" />
+  <polygon points="50,50 50,90 10,70 10,30" fill="#333" stroke="#111" stroke-width="1" />
+  
+  <!-- Shiny edge highlights -->
+  <line x1="50" y1="10" x2="50" y2="50" stroke="#fff" stroke-width="1" stroke-opacity="0.3" />
+  <line x1="50" y1="50" x2="90" y2="30" stroke="#fff" stroke-width="1" stroke-opacity="0.3" />
+  <line x1="50" y1="50" x2="10" y2="30" stroke="#fff" stroke-width="1" stroke-opacity="0.5" />
+</svg>
